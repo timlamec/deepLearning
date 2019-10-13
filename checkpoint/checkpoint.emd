@@ -1,0 +1,38 @@
+{
+    "Framework": "arcgis.learn.models._inferencing",
+    "InferenceFunction": "ArcGISObjectDetector.py",
+    "ModelConfiguration": "_DynamicSSD",
+    "ModelFile": "checkpoint.pth",
+    "ModelType": "ObjectDetection",
+    "ImageHeight": 224,
+    "ImageWidth": 224,
+    "ExtractBands": [
+        0,
+        1,
+        2
+    ],
+    "Grids": [
+        4
+    ],
+    "Zooms": [
+        1.0
+    ],
+    "Ratios": [
+        [
+            1.0,
+            1.0
+        ]
+    ],
+    "Classes": [
+        {
+            "Value": 1,
+            "Name": "new",
+            "Color": [
+                255,
+                0,
+                0
+            ]
+        }
+    ],
+    "backbone": "resnet34"
+}
